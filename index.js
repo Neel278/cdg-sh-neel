@@ -12,6 +12,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
+app.get("/", (req, res) => {
+	res.json({
+		message: "cdg-sh- url shortenenr",
+	});
+});
+
 // app.get("/url/:id", (req, res) => {
 // 	// Todo : get a short url by id
 // });
